@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:pharoh_lense/ui/home/tabs/scanner/screen/chatbot_screen.dart';
 import 'package:pharoh_lense/ui/home/tabs/scanner/screen/scanner_screen.dart';
 
 Future<void> main() async {
@@ -17,8 +18,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Pharoh Lense",
-      home: ScannerScreen(camera: camera!),
+      // home: ScannerScreen(camera: camera!),
+      home: const ChatbotScreen(),
     );
   }
 }
