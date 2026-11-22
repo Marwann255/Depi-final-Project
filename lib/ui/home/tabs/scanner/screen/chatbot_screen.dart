@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pharoh_lense/core/utils/app_assets.dart';
 
 class ChatbotScreen extends StatelessWidget {
-  const new({super.key});
+  const ChatbotScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:pharoh_lense/ui/home/tabs/scanner/screen/chatbot_screen.dart';
-import 'package:pharoh_lense/ui/home/tabs/scanner/screen/scanner_screen.dart';
+import 'package:pharoh_lense/core/router/app_routes.dart';
+import 'package:pharoh_lense/ui/home/screen/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,8 +20,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Pharoh Lense",
+      routes: AppRoutes.routes,
       // home: ScannerScreen(camera: camera!),
-      home: const ChatbotScreen(),
+      home: const HomeScreen(),
     );
   }
 }

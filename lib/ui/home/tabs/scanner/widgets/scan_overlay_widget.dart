@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ScanOverlayWidget extends StatelessWidget {
-  const new({super.key});
+  const ScanOverlayWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
