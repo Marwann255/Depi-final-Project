@@ -2,6 +2,7 @@ import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:pharoh_lense/core/router/app_routes.dart';
 import 'package:pharoh_lense/ui/home/screen/home_screen.dart';
+import 'package:pharoh_lense/ui/home/tabs/scanner/screen/device_camera_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

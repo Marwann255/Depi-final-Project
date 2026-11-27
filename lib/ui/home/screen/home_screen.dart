@@ -13,13 +13,13 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: AppColors.DarkbackgroundColor,
       bottomNavigationBar: const BottomNavBar(),
       body: Center(
         child: Text(
           'Home Screen',
           style: TextStyle(
-            color: AppColors.primaryColor,
+            color: AppColors.DarkprimaryColor,
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),

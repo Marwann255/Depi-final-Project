@@ -16,7 +16,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   // Same order as the icons below. Replace with your real screens.
   static const List<Widget> _screens = [
-    HomeScreen(),
+    // HomeScreen(),
     // TrainsTab(),
     // TicketsTab(),
     // ProfileTab(),
@@ -35,13 +35,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
       body: IndexedStack(index: _bottomNavIndex, children: _screens),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, RouteName.scanner),
-        backgroundColor: AppColors.primaryColor,
+        backgroundColor: AppColors.DarkprimaryColor,
         child: const Icon(Icons.camera_alt, color: Colors.black),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AnimatedBottomNavigationBar(
-        activeColor: AppColors.secondaryColor,
-        backgroundColor: AppColors.primaryColor,
+        activeColor: AppColors.DarksecondaryColor,
+        backgroundColor: AppColors.DarksurfaceColor,
         icons: _icons,
         iconSize: 28,
         activeIndex: _bottomNavIndex,
