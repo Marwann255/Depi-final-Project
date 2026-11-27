@@ -35,13 +35,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
       body: IndexedStack(index: _bottomNavIndex, children: _screens),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, RouteName.scanner),
-        backgroundColor: AppColors.DarkprimaryColor,
+        backgroundColor: AppColors.darkprimaryColor,
         child: const Icon(Icons.camera_alt, color: Colors.black),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AnimatedBottomNavigationBar(
-        activeColor: AppColors.DarksecondaryColor,
-        backgroundColor: AppColors.DarksurfaceColor,
+        activeColor: AppColors.darksecondaryColor,
+        backgroundColor: AppColors.darksurfaceColor,
         icons: _icons,
         iconSize: 28,
         activeIndex: _bottomNavIndex,
